@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Full-Width Image</title>
+    <!-- Include Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles for the image if needed */
+        .full-width-img {
+            /* Add your styles here */
+            width: 100%;
+        }
+        .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.image-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.image-text p {
+    font-size: 18px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/jpeg;base64,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" alt="Full-width Image" class="img-fluid full-width-img">
+    </div>
+    <div class="container-fluid">
+        <img src="your-image.jpg" alt="Full-width Image" class="img-fluid">
+        <div class="image-text">
+            <h1>Your Text Goes Here</h1>
+            <p>Additional text or content can be placed here.</p>
+        </div>
+    </div>
+    
+
+    <!-- Additional content goes here -->
+
+    <!-- Include Bootstrap JS via CDN (if needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
