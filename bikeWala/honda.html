@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda Prices</title>
+    <script src="https://kit.fontawesome.com/6481257ff6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        /* Style for each bike card */
+  /* Style for each bike card */
+
+.fa-star{
+  color: rgb(181, 211, 12);
+}
 .bike-card {
     border: 1px solid #ddd;
     padding: 20px;
@@ -111,21 +116,27 @@
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .bike-card {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+  
+
 
     .bike-image,
     .bike-info {
         flex: 1;
-        width: 100%;
+        width: 10%;
         padding: 10px;
-        text-align: center;
+        text-align: left;
     }
+    .bike-card img {
+      flex-basis: 10%;
+    height: auto;
+}
 
     .bike-info h2,
     .bike-info p {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -140,7 +151,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -170,19 +181,72 @@
         </div>
       </nav>
 
+      <!-- Bike Honda -->
       <div class="bike-card">
         <div class="bike-image">
-            <img src="images/bike1.webp" alt="Bike Image">
+            <img src="images/brand/honda/Honda-Sp-125.webp" alt="Bike Image">
         </div>
         <div class="bike-info">
-            <h2>Bike Name</h2>
-            <p>Price: $X,XXX</p>
+            <h2>Honda Sp 125  ></h2>
+            <p><i class="fa-solid fa-star"></i> 4.4/s &nbsp; &nbsp;&nbsp;&nbsp;398 Ratings</p>
+            <p>1833cc | 124.7bhp | 390kg</p>
+            <p> &#x20B9;  39,88,995</p>
+            <p>Avg.Ex-Showroom price</p>
             <button class="check-price-button">Check On-Road Price</button>
         </div>
     </div>
-    
-    
-    
+    <div class="bike-card">
+      <div class="bike-image">
+          <img src="images/brand/honda/Honda-Sp-125.webp" alt="Bike Image">
+      </div>
+      <div class="bike-info">
+          <h2>Honda Sp 125  ></h2>
+          <p><i class="fa-solid fa-star"></i> 4.4/s &nbsp; &nbsp;&nbsp;&nbsp;398 Ratings</p>
+          <p>1833cc | 124.7bhp | 390kg</p>
+          <p> &#x20B9;  39,88,995</p>
+          <p>Avg.Ex-Showroom price</p>
+          <button class="check-price-button">Check On-Road Price</button>
+      </div>
+  </div>
+  <div class="bike-card">
+    <div class="bike-image">
+        <img src="images/brand/honda/Honda-Sp-125.webp" alt="Bike Image">
+    </div>
+    <div class="bike-info">
+        <h2>Honda Sp 125  ></h2>
+        <p><i class="fa-solid fa-star"></i> 4.4/s &nbsp; &nbsp;&nbsp;&nbsp;398 Ratings</p>
+        <p>1833cc | 124.7bhp | 390kg</p>
+        <p> &#x20B9;  39,88,995</p>
+        <p>Avg.Ex-Showroom price</p>
+        <button class="check-price-button">Check On-Road Price</button>
+    </div>
+</div>
+<div class="bike-card">
+  <div class="bike-image">
+      <img src="images/brand/honda/Honda-Sp-125.webp" alt="Bike Image">
+  </div>
+  <div class="bike-info">
+      <h2>Honda Sp 125  ></h2>
+      <p><i class="fa-solid fa-star"></i> 4.4/s &nbsp; &nbsp;&nbsp;&nbsp;398 Ratings</p>
+      <p>1833cc | 124.7bhp | 390kg</p>
+      <p> &#x20B9;  39,88,995</p>
+      <p>Avg.Ex-Showroom price</p>
+      <button class="check-price-button">Check On-Road Price</button>
+  </div>
+</div>
+ <div class="bike-card">
+        <div class="bike-image">
+            <img src="images/brand/honda/Honda-Sp-125.webp" alt="Bike Image">
+        </div>
+        <div class="bike-info">
+            <h2>Honda Sp 125  ></h2>
+            <p><i class="fa-solid fa-star"></i> 4.4/s &nbsp; &nbsp;&nbsp;&nbsp;398 Ratings</p>
+            <p>1833cc | 124.7bhp | 390kg</p>
+            <p> &#x20B9;  39,88,995</p>
+            <p>Avg.Ex-Showroom price</p>
+            <button class="check-price-button">Check On-Road Price</button>
+        </div>
+    </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
