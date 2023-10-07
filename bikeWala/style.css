@@ -1,0 +1,99 @@
+.brand-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    justify-content: center; 
+}
+
+.brand-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.fa-motorcycle {
+  font-size: 36px; 
+  font-weight: 700; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+.imgStyle {
+  height: 1100px;
+  width: 100%;
+  background-color: red;
+  background-image: url('./images/home/bike5.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;}
+
+.imgFluid {
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(51, 230, 230);
+    
+
+}
+.social-icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
+
+}
+
+.social-icons a {
+    border-radius: 50%;
+    background-color: red;
+    text-decoration: none; /* Remove underlines from the links */
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        height: auto; /* Allow the container to adjust its height */
+        padding: 10px; /* Add padding for spacing between icons */
+        align-items: center; /* Center icons vertically */
+    }
+
+    .social-icons a {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+}
+@media (max-width: 768px) {
+ 
+  .imgStyle{
+   background-image: url('./images/home/bike.jpg');
+   height: 20;
+   object-fit: cover;
+  }
+}
+/* laptop */
+@media (min-width: 769px) {
+
+  .imgStyle{
+    width: 100%;
+    max-height: 900px;
+  }
+}
+  

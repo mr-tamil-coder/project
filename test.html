@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+</head>
+<body>
+    <h1>Product Search</h1>
+    <input type="text" id="searchInput" placeholder="Search products">
+    
+    <ul id="productList">
+        <li data-product-id="1">Product 1</li>
+        <li data-product-id="2">Product 2</li>
+        <li data-product-id="3">Product 3</li>
+        <li data-product-id="4">Product 4</li>
+        <li data-product-id="5">Product 5</li>
+        
+        <li data-product-id="6"> <!-- Add data-product-id attribute with the product ID -->
+            <div class="col-lg-4 col-md-6 text-center aos-init aos-animate" data-aos="fade-up" style="min-height:630px;">
+                <div class="count-box">
+                    <img style="max-width:100%;height:auto;" src="https://scientificsystems.in/HMS/Website-Image/494929.png">
+                    <div class="text-center product"><h6 class="title-class">Altimeter</h6></div>
+                    <div style="height:155px">
+                        <p>An altimeter is a device that measures altitude—a location's distance above sea level. Most altimeters are barometric, meaning they measure altitude...</p>
+                    </div>
+                    <div class="text-center"><button class="btnmba" type="submit" onclick="window.location.href='https://scientificsystems.in/HMS/templates/Mamba/page.php?Pid=33';">Read More</button></div>
+                </div>
+            </div>
+        </li>
+        
+        <li data-product-id="7"> <!-- Add data-product-id attribute with the product ID -->
+            <div class="col-lg-4 col-md-6 text-center aos-init aos-animate" data-aos="fade-up" style="min-height:630px;">
+                <div class="count-box">
+                    <img style="max-width:100%;height:auto;" src="https://scientificsystems.in/HMS/Website-Image/946635.png">
+                    <div class="text-center product"><h6 class="title-class">Anemometer</h6></div>
+                    <div style="height:155px">
+                        <p>The anemometer counts the number of rotations, which is used to calculate wind speed. An anemometer is...</p>
+                    </div>
+                    <div class="text-center"><button class="btnmba" type="submit" onclick="window.location.href='https://scientificsystems.in/HMS/templates/Mamba/page.php?Pid=34';">Read More</button></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("searchInput");
+            const productList = document.getElementById("productList");
+            const products = productList.querySelectorAll("li[data-product-id]");
+
+            searchInput.addEventListener("input", function () {
+                const searchTerm = searchInput.value.toLowerCase();
+
+                products.forEach(function (product) {
+                    const productId = product.getAttribute("data-product-id");
+                    
+                    if (productId === searchTerm) {
+                        product.style.display = "block";
+                    } else {
+                        product.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
